@@ -73,7 +73,11 @@ a:hover{
 }
 
 
-body#about img {height: 15em;}
+body#about img {
+    height: 15em;}
+
+
+
 /* body#portfolio img {height: 15em;} */
 
 p {max-width: 50em;}
@@ -105,6 +109,10 @@ body{
                             "foot foot";
         grid-template-rows: auto auto 1fr auto;
     }
+
+    body#about img {
+        max-width: 100%;
+        height: auto;}
 }
 
 body > *{
