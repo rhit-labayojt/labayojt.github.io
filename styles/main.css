@@ -97,6 +97,16 @@ body{
     }
 }
 
+@media screen and (max-width: 600px){
+    body{
+        grid-template-areas: "head head"
+                            "nav nav"
+                            "main main"
+                            "foot foot";
+        grid-template-rows: auto auto 1fr auto;
+    }
+}
+
 body > *{
     padding-left: var(--horizontal-space);
     padding-right: var(--horizontal-space);
