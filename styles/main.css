@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap'); */
+
+
+:root {
+    --vertical-space: 2rem;
+    --horizontal-space: 3rem;
+
+    --light-color:#F5EFCF;
+    --body-color:#C8D9E0;
+    --heading-color:#FCFCD8;
+    --subheading-color: #BDBDA2;
+    --ssubheading-color: #FCFCD8;
+    --contract-color:#BE8B87;
+
+    --green-color: #7ca49c;
+    /* --black-color: #3C403F; */
+    --black-color: 60, 64, 63;
+}
+
+body{
+    /* padding-left: 4em; */
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    /* background-image: linear-gradient(112.5deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%,rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(157.5deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%,rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(135deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%,rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(90deg, rgb(195, 195, 195),rgb(245,239,207)); background-blend-mode:overlay,overlay,overlay,normal; */
+    background-color: #7ca49c;
+    background-image: url(http://www.transparenttextures.com/patterns/cartographer.png);
+    
+    /* background-color: #c5948d;
+background-image: url("https://www.transparenttextures.com/patterns/cartographer.png"); */
+    
+    color: var(--body-color);
+}
+
+main{
+    background-color: rgba(var(--black-color), 0.7);
+    background-image: url(http://www.transparenttextures.com/patterns/asfalt-dark.png);
+}
+
+h1, h2, h3{
+    line-height: 1.2;
+    font-family: 'Parisienne', cursive;
+    /* font-family: 'Allura', cursive; */
+    /* font-family: 'Tangerine', cursive; */
+}
+
+h1{
+    color: var(--heading-color);
+}
+
+h2{
+    color: var(--subheading-color);
+}
+
+h3{
+    color: var(--ssubheading-color);
+}
+
+a{
+    color: var(--body-color);
+    text-decoration-color: var(--contract-color) ;
+}
+
+a:hover{
+    color: var(--contract-color)
+}
+
+#headlink{
+    color: var(--heading-color);
+    text-decoration: none;
+}
+
+
+body#about img {height: 15em;}
+/* body#portfolio img {height: 15em;} */
+
+p {max-width: 50em;}
+
+body{
+    display: grid;
+    grid-template-areas: "head head"
+                        "nav nav"
+                        "main main"
+                        "foot foot";
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr 4fr;
+}
+
+@media screen and (min-width: 25em){
+    body{
+        grid-template-areas: "head head"
+                            "nav main"
+                            "foot foot";
+        grid-template-rows: auto 1fr auto;
+    }
+}
+
+body > *{
+    padding-left: var(--horizontal-space);
+    padding-right: var(--horizontal-space);
+
+}
+
+body > header{
+    grid-area: head;
+    /* background-color: yellow; */
+}
+
+body > nav{
+    grid-area: nav;
+    /* background-color: blue; */
+}
+
+body > nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+/* body > nav ul li{
+    display: inline;
+    padding-right: 1rem;
+} */
+
+body > main{
+    grid-area: main;
+    /* background-color: purple; */
+}
+
+body > footer{
+    grid-area: foot;
+    /* background-color: red; */
+}
+
+header, footer{
+    padding-top: var(--vertical-space);
+    padding-bottom: var(--vertical-space);
+}
+
+header h1, footer h1 {
+    margin: 0;
+}
+
+body#portfolio ul#portfolioItems{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    list-style-type: none;
+    padding: 0
+}
+
+@media  screen and (min-width: 25em) {
+    body#portfolio ul#portfolioItems li{
+        flex-basis: 48%;
+        padding-right: 2%;
+    }
+}
+
+body#portfolio ul#portfolioItems li img{
+    max-width: 100%;
+}
+
+
+#scrollBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: var(--heading-color); /* Set a background color */
+    color: var(--green-color); /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #scrollBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
