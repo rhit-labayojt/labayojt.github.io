@@ -118,10 +118,11 @@ body > nav ul{
     padding: 0;
 }
 
-/* body > nav ul li{
+body > nav ul li{
     display: inline;
     padding-right: 1rem;
-} */
+    font-size: large;
+}
 
 body > main{
     grid-area: main;
