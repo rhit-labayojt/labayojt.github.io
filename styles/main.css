@@ -185,5 +185,5 @@ body#portfolio ul#portfolioItems li img{
 
   /* Solid border */
 hr.solid {
-    border-top: 3px solid #bbb;
+    border-top: 3px solid var(--body-color);
   }
