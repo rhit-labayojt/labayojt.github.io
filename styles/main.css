@@ -187,3 +187,8 @@ body#portfolio ul#portfolioItems li img{
 hr.solid {
     border-top: 3px solid var(--body-color);
   }
+
+  /* Dotted border */
+hr.dotted {
+    border-top: 3px dotted var(--body-color);
+  }
