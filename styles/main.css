@@ -134,11 +134,13 @@ body > nav{
 body > nav ul{
     list-style-type: none;
     padding: 0;
+    font-size: large;
 }
 
 /* body > nav ul li{
     display: inline;
     padding-right: 1rem;
+    font-size: x-large;
 } */
 
 body > main{
@@ -197,4 +199,14 @@ body#portfolio ul#portfolioItems li img{
   
   #scrollBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+  /* Solid border */
+hr.solid {
+    border-top: 3px solid var(--body-color);
+  }
+
+  /* Dotted border */
+hr.dotted {
+    border-top: 3px dotted var(--body-color);
   }
