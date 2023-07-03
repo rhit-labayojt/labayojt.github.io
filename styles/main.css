@@ -232,3 +232,8 @@ hr.dotted {
       width: 100%;
     }
   } */
+
+  .flex-container {
+    display: flex;
+    /* background-color: DodgerBlue; */
+  }
