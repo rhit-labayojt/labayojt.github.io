@@ -236,7 +236,6 @@ hr.dotted {
   .flex-container {
     display: flex;
     gap: 100px;
-    /* background-color: DodgerBlue; */
   }
 
   .flex-child {
