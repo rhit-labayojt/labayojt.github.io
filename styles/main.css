@@ -235,10 +235,11 @@ hr.dotted {
 
   .flex-container {
     display: flex;
-    gap: 200px;
+    gap: 100px;
     /* background-color: DodgerBlue; */
   }
 
   .flex-child {
-    background-color: #7ca49c70;
+    padding: 10px;
+    background-color: #7ca49c52;
   }
