@@ -233,6 +233,7 @@ hr.dotted {
     }
   } */
 
+  /*Flex boxes for resume differentiation*/
   .flex-container {
     display: flex;
     gap: 100px;
