@@ -238,7 +238,6 @@ hr.dotted {
     display: flex;
     gap: 100px;
     margin-bottom: 10px;
-    margin-top: 10px;
   }
 
   .flex-child {
