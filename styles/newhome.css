@@ -13,8 +13,11 @@ body {
     text-align: center;
 }
 
-h1 {
-    font-size: 3em;
+h1, h2, h3{
+    line-height: 1.2;
+    font-family: 'Parisienne', cursive;
+    /* font-family: 'Allura', cursive; */
+    /* font-family: 'Tangerine', cursive; */
 }
 
 p {
