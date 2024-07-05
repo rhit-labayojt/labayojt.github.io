@@ -16,10 +16,7 @@ body {
 
 main {
     width: 100%;
-    position: absolute;
-    top: 80px; /* Adjust the value as needed to place the headings below the header */
-    left: 50%;
-    transform: translateX(-50%);
+    margin-top: 60px; /* Adjust the value as needed to place the headings below the header */
     display: flex;
     flex-direction: column;
     align-items: center; /* Center items horizontally */
@@ -51,7 +48,7 @@ header {
 nav {
     position: absolute;
     top: 0;
-    left: -100%; /* Initially hide the nav off-screen to the left */
+    left: -250px; /* Initially hide the nav off-screen to the left */
     width: 250px; /* Adjust width as needed */
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
