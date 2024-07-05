@@ -109,6 +109,8 @@ h2, h3 {
     /* font-family: 'Tangerine', cursive; */
     line-height: 1;
     font-family: "Arvo", serif;
+    font-weight: 400;
+  font-style: normal;
     margin: 0.5em 0;
 }
 
