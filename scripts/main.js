@@ -18,3 +18,13 @@ function scrollFunction() {
 function topFunction() {
   window.scrollTo({top: 0, behavior: 'smooth'});
 }
+
+//hamburger home button
+function toggleMenu() {
+  var nav = document.getElementById('navMenu');
+  if (nav.classList.contains('hide')) {
+      nav.classList.remove('hide');
+  } else {
+      nav.classList.add('hide');
+  }
+}

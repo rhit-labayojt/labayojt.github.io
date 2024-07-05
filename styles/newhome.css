@@ -13,7 +13,57 @@ body {
     text-align: center;
 }
 
-h1, h2, h3{
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-align: center;
+}
+
+.hamburger {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+nav {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+nav.hide {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 10px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+h1, h2, h3 {
     line-height: 1.2;
     font-family: 'Parisienne', cursive;
     /* font-family: 'Allura', cursive; */
