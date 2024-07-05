@@ -77,7 +77,7 @@ nav {
     width: 200px; /* Adjust width as needed */
     height: 100%;
     /* background: rgba(0, 0, 0, 0.8); */
-    background: rgb(38,74, 37,0.8);
+    background: rgb(38,74, 37,0.5);
     text-align: left;
     transition: left 1.0s ease; /* Add transition for smooth sliding effect */
     z-index: 999;
@@ -92,6 +92,7 @@ nav.hide {
 }
 
 nav ul {
+    background: rgb(38,74, 37,0.5);
     list-style-type: none;
     padding: 0;
     margin-top: 60px; /* Adjust this value to position the menu items below the header */
