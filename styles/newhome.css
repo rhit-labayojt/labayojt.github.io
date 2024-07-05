@@ -94,11 +94,14 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin-top: 60px; /* Adjust this value to position the menu items below the header */
+    background: rgba(0, 0, 0, 0.8); /* Dark background color */
+    height: 100%; /* Ensure full height */
+    overflow-y: auto; /* Enable scroll if content exceeds height */
 }
 
 nav ul li {
-    margin-left: 20px; /* Add margin to the left of each list item */
-    padding: 10px; /* Adjust padding as needed */
+    padding: 10px 20px; /* Add padding around each list item */
+    border-left: 5px solid black; /* Dark border on the left side of each list item */
 }
 
 nav ul li a {
@@ -106,6 +109,8 @@ nav ul li a {
     text-decoration: none;
     font-size: 1.2em;
     font-family: "Arvo", serif;
+    display: block;
+    padding: 10px 0; /* Add padding top and bottom */
 }
 
 h1 {
