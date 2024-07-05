@@ -29,7 +29,7 @@ body::before {
     height: 100%;
      /* Initial blur effect */
     /* backdrop-filter: blur(5px); */
-    transition: backdrop-filter 1.0s ease; /* Transition for blur effect */}
+    transition: backdrop-filter 0.5s ease; /* Transition for blur effect */}
 
 /* Menu visible state */
 body.nav-active::before {
@@ -76,7 +76,8 @@ nav {
     left: -250px; /* Initially hide the nav off-screen to the left */
     width: 50px; /* Adjust width as needed */
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    /* background: rgba(0, 0, 0, 0.8); */
+    background: rgb(38,74, 37,0.8);
     text-align: left;
     transition: left 1.0s ease; /* Add transition for smooth sliding effect */
     z-index: 999;
