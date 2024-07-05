@@ -71,6 +71,7 @@ nav.hide {
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin-top: 60px; /* Adjust this value to position the menu items below the header */
 }
 
 nav ul li {
