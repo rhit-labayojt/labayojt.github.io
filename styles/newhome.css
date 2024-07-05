@@ -17,12 +17,12 @@ body {
 main {
     width: 100%;
     position: absolute;
-    top: 60px; /* Adjust the value as needed to place the headings below the nav */
-    left: 0;
+    top: 80px; /* Adjust the value as needed to place the headings below the header */
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Align items to the start of the flex container */
     flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
