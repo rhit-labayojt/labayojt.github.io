@@ -14,6 +14,18 @@ body {
     position: relative; /* Ensure the button is positioned relative to the body */
 }
 
+main {
+    width: 100%;
+    position: absolute;
+    top: 60px; /* Adjust the value as needed to place the headings below the nav */
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the start of the flex container */
+    flex-direction: column;
+    text-align: center;
+}
+
 header {
     width: 100%;
     position: absolute;
@@ -65,10 +77,11 @@ nav ul li a {
 }
 
 h1, h2, h3 {
-    line-height: 1.2;
-    font-family: 'Parisienne', cursive;
     /* font-family: 'Allura', cursive; */
     /* font-family: 'Tangerine', cursive; */
+    line-height: 1.2;
+    font-family: 'Parisienne', cursive;
+    margin: 0.5em 0;
 }
 
 p {
