@@ -23,5 +23,9 @@ function topFunction() {
 function toggleMenu() {
   var nav = document.getElementById('navMenu');
   nav.classList.toggle('show');
+
+  // Toggle nav-active class on body
+  var body = document.getElementsByTagName('body')[0];
+  body.classList.toggle('nav-active');
 }
 
