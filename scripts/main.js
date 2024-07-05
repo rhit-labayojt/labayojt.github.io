@@ -25,6 +25,6 @@ function toggleMenu() {
   if (nav.classList.contains('show')) {
       nav.classList.remove('show');
   } else {
-      nav.classList.add('show');
+      nav.classList.add('hide');
   }
 }
