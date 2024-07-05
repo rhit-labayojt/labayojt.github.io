@@ -22,9 +22,9 @@ function topFunction() {
 //hamburger home button
 function toggleMenu() {
   var nav = document.getElementById('navMenu');
-  if (nav.classList.contains('hide')) {
-      nav.classList.remove('hide');
+  if (nav.classList.contains('show')) {
+      nav.classList.remove('show');
   } else {
-      nav.classList.add('hide');
+      nav.classList.add('show');
   }
 }

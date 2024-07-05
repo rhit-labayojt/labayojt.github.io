@@ -50,11 +50,18 @@ header {
 
 nav {
     position: absolute;
-    top: 50px;
-    left: 0;
-    width: 100%;
+    top: 0;
+    left: -100%; /* Initially hide the nav off-screen to the left */
+    width: 250px; /* Adjust width as needed */
+    height: 100%;
     background: rgba(0, 0, 0, 0.8);
     text-align: center;
+    transition: left 0.3s ease; /* Add transition for smooth sliding effect */
+    z-index: 999;
+}
+
+nav.show {
+    left: 0; /* Move nav into view */
 }
 
 nav.hide {
