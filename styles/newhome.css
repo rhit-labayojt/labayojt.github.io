@@ -56,6 +56,10 @@ header {
     padding: 10px;
     text-align: center;
     top: 0px;
+
+    position: absolute; /* Use absolute positioning */
+    left: 937px; /* Set the x-coordinate */
+    top: 66px; /* Set the y-coordinate */
 }
 
 .hamburger {
