@@ -17,7 +17,7 @@ body {
 main {
     width: 100%;
     position: absolute;
-    top: 60px; /* Adjust the value as needed to place the headings below the header */
+    top: 80px; /* Adjust the value as needed to place the headings below the header */
     left: 50%;
     transform: translateX(-50%);
     display: flex;
