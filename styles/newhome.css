@@ -97,7 +97,8 @@ nav ul {
 }
 
 nav ul li {
-    padding: 10px 0;
+    margin-left: 20px; /* Add margin to the left of each list item */
+    padding: 10px; /* Adjust padding as needed */
 }
 
 nav ul li a {
