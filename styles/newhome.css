@@ -124,10 +124,10 @@ h1 {
     line-height: 1.0;
     font-family: 'Parisienne', cursive;
     margin: 0.5em 0;
-    font-size: 2.0em;
+    font-size: 4.0em;
     position: absolute; /* Use absolute positioning */
-    left: 937px; /* Set the x-coordinate */
-    top: 66px; /* Set the y-coordinate */
+    /* left: 937px;
+    top: 66px; */
 }
 
 h2, h3 {
