@@ -81,7 +81,7 @@ nav {
     width: 200px; /* Adjust width as needed */
     height: 100%;
     /* background: rgba(0, 0, 0, 0.8); */
-    background: rgb(38,74, 37,0.3);
+    background: rgb(38,74, 37,0.2);
     text-align: left;
     transition: left 1.0s ease; /* Add transition for smooth sliding effect */
     z-index: 999;
@@ -96,7 +96,7 @@ nav.hide {
 }
 
 nav ul {
-    background: rgb(38,74, 37,0.3);
+    background: rgb(38,74, 37,0.2);
     list-style-type: none;
     padding: 0;
     margin-top: 60px; /* Adjust this value to position the menu items below the header */
@@ -106,7 +106,7 @@ nav ul {
 
 nav ul li {
     padding: 10px 20px; /* Add padding around each list item */
-    border-left: 5px solid rgba(38, 74, 37, 0.30); /* Dark border on the left side of each list item */
+    border-left: 5px solid rgba(38, 74, 37, 0.20); /* Dark border on the left side of each list item */
 }
 
 nav ul li a {
@@ -125,6 +125,9 @@ h1 {
     font-family: 'Parisienne', cursive;
     margin: 0.5em 0;
     font-size: 2.0em;
+    position: absolute; /* Use absolute positioning */
+    left: 937px; /* Set the x-coordinate */
+    top: 66px; /* Set the y-coordinate */
 }
 
 h2, h3 {
