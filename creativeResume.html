@@ -9,62 +9,58 @@
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="icon" href="images/favicon.png" />
     <style>
-        /* Inline example styles (should ideally be in your CSS) */
+        /* Example CSS for better formatting */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             background-color: #f9f9f9;
             color: #333;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            color: #4CAF50;
+        }
+
+        .entry {
+            margin-bottom: 1.5rem;
+        }
+
+        .entry h3 {
             margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background: #4CAF50;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-        }
-
-        nav {
-            background: #333;
-            padding: 0.5rem;
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        nav li {
-            margin: 0 1rem;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        main {
-            padding: 2rem;
-            max-width: 900px;
-            margin: auto;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        h1, h2, h3 {
             color: #333;
+        }
+
+        .entry h4 {
+            margin: 0.5rem 0 0;
+            font-weight: normal;
+            color: #666;
+        }
+
+        .entry ul {
+            margin: 0.5rem 0 0 1.5rem;
+            padding: 0;
+        }
+
+        .entry ul li {
+            list-style: circle;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .flex-child {
+            flex: 1;
+            min-width: 300px;
         }
 
         hr {
@@ -72,52 +68,6 @@
             height: 1px;
             background: #ddd;
             margin: 2rem 0;
-        }
-
-        .flex-container {
-            display: flex;
-            gap: 2rem;
-            flex-wrap: wrap;
-        }
-
-        .flex-child {
-            flex: 1;
-            min-width: 250px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background: #333;
-            color: white;
-            margin-top: 2rem;
-        }
-
-        footer a {
-            color: #4CAF50;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        #scrollBtn {
-            position: fixed;
-            bottom: 1rem;
-            right: 1rem;
-            background: #4CAF50;
-            color: white;
-            border: none;
-            padding: 0.5rem 1rem;
-            font-size: 1.2rem;
-            cursor: pointer;
-            border-radius: 50%;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        }
-
-        #scrollBtn:hover {
-            background: #45a049;
         }
     </style>
 </head>
@@ -139,72 +89,58 @@
 
     <main>
         <h1>Creative Resume</h1>
-        <hr />
 
         <section>
             <h2>Education</h2>
-            <div class="flex-container">
-                <div class="flex-child">
-                    <h3>Rose-Hulman Institute of Technology</h3>
-                    <ul>
-                        <li>B.S. Computer Science</li>
-                    </ul>
-                    <h4>Related Courses</h4>
-                    <ul>
-                        <li>Visual Arts in Civilization</li>
-                        <li>Fundamentals of Tonal Theory</li>
-                        <li>Creative Writing</li>
-                        <li>Writing in a Digital Age</li>
-                    </ul>
-                </div>
+            <div class="entry">
+                <h3>Rose-Hulman Institute of Technology</h3>
+                <h4>B.S. Computer Science</h4>
+                <ul>
+                    <li>Visual Arts in Civilization</li>
+                    <li>Fundamentals of Tonal Theory</li>
+                    <li>Creative Writing</li>
+                    <li>Writing in a Digital Age</li>
+                </ul>
             </div>
         </section>
-
-        <hr />
 
         <section>
             <h2>Skills</h2>
-            <div class="flex-container">
-                <div class="flex-child">
-                    <h3>Software</h3>
-                    <ul>
-                        <li>Cyberlink PowerDirector</li>
-                        <li>Twitch Studio</li>
-                        <li>StreamLabs</li>
-                    </ul>
-                </div>
+            <div class="entry">
+                <h3>Software</h3>
+                <ul>
+                    <li>Cyberlink PowerDirector</li>
+                    <li>Twitch Studio</li>
+                    <li>StreamLabs</li>
+                </ul>
             </div>
         </section>
 
-        <hr />
-
         <section>
             <h2>Experience</h2>
-            <div class="flex-container">
-                <div class="flex-child">
-                    <h3>Theatre Tech</h3>
-                    <p>Rose-Hulman Institute of Technology</p>
-                    <p>2022 - Present</p>
-                    <ul>
-                        <li>Shows: CLUE, A Christmas Carol</li>
-                        <li>Stage crew, set building</li>
-                    </ul>
-                </div>
-                <div class="flex-child">
-                    <h3>"Toppettes" Dance Team</h3>
-                    <p>Schlarman Academy High School</p>
-                    <p>2018 - 2019</p>
-                </div>
-                <div class="flex-child">
-                    <h3>Competitive Dance</h3>
-                    <p>Laure's School of Dance</p>
-                    <p>2010 - 2017</p>
-                    <ul>
-                        <li>Ballet (non-pointe)</li>
-                        <li>Jazz</li>
-                        <li>Hip-Hop</li>
-                    </ul>
-                </div>
+            <div class="entry">
+                <h3>Theatre Tech</h3>
+                <h4>Rose-Hulman Institute of Technology | 2022 - Present</h4>
+                <ul>
+                    <li>Shows: CLUE, A Christmas Carol</li>
+                    <li>Stage crew, set building</li>
+                </ul>
+            </div>
+            <div class="entry">
+                <h3>"Toppettes" Dance Team</h3>
+                <h4>Schlarman Academy High School | 2018 - 2019</h4>
+                <ul>
+                    <li>Performed in ballet, jazz, and hip-hop routines</li>
+                </ul>
+            </div>
+            <div class="entry">
+                <h3>Competitive Dance</h3>
+                <h4>Laure's School of Dance | 2010 - 2017</h4>
+                <ul>
+                    <li>Ballet (non-pointe)</li>
+                    <li>Jazz</li>
+                    <li>Hip-Hop</li>
+                </ul>
             </div>
         </section>
     </main>
