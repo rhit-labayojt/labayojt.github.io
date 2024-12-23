@@ -145,14 +145,3 @@ p {
     font-size: 1.5em;
 }
 
-main h1 {
-    font-size: 2.5em; /* Adjust as needed */
-    margin: 0;
-    padding: 0;
-  }
-
-main h2 {
-    font-size: 1.5em; /* Adjust as needed */
-    margin-top: 10px; /* Adjust spacing between h1 and h2 */
-    margin-bottom: 0;
-  }
