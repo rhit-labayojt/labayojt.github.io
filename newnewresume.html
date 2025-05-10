@@ -74,6 +74,32 @@
       padding: 1rem;
       margin-top: 2rem;
     }
+
+        .fixed-corner-box {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.fixed-corner-box img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.fixed-corner-box .text-box {
+  background-color: var(--jet);
+  color: var(--rose);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-family: 'Segoe UI', sans-serif;
+  outline: var(--forest);
+}
   </style>
 </head>
 <body>
@@ -190,5 +216,12 @@
       <p>LinkedIn: linkedin.com/in/jasmine-labayog-b7b811247/</p>
     </section>
   </main>
+
+   <div class="fixed-corner-box">
+  <img src="images/talkinghead.png" alt="Corner image">
+  <div class="text-box">Wow, pretty impressive, huh?</div>
+</div>
+
+  
 </body>
 </html>
