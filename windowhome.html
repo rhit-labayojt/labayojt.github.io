@@ -6,7 +6,7 @@
   <title>Jasmine Labayog | Contact</title>
   <style>
     :root {
-      --violet: #ad97c4;
+      --violet: #bca5d3;
       --green: #748B75;
       --forest: #2F4B43;
       --rose: #B97C86;
@@ -128,6 +128,32 @@
       font-style: normal;
     }
 
+    .fixed-corner-box {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.fixed-corner-box img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.fixed-corner-box .text-box {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
 
 
   </style>
@@ -157,6 +183,12 @@
       <img src="images/window.png" alt="Window drawing" style="flex: 1; max-width: 400px; height: auto;">
     </div>
   </main>
+  
+  <div class="fixed-corner-box">
+  <img src="images/profile.png" alt="Corner image">
+  <div class="text-box">hello world</div>
+</div>
+
   
   
 
